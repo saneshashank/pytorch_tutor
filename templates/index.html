@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PyTorch Tutor · Guided</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">🔥 PyTorch Tutor</div>
+        <nav>
+          <a href="/" class="active">Tutor</a>
+          <a href="/tutorial" target="_self">Tutorial (MD)</a>
+          <a href="/reference/einsum" target="_self">Einsum Reference</a>
+        </nav>
+        <div class="note">
+          Guided flow reads <code>content/tutorial.md</code>. Different question than the example. Auto‑advance enabled.
+        </div>
+      </aside>
+      <main class="main">
+        <header>
+          <h1>Guided Tutor</h1>
+          <div class="sub">Detailed intro → Example → Your turn (new task) → Hints → Auto‑advance ✅</div>
+        </header>
+
+        <section class="guided">
+          <div class="row">
+            <h2>Start</h2>
+            <div class="actions">
+              <button id="startLesson">Start from Beginning</button>
+            </div>
+          </div>
+
+          <div class="progress" id="progress"></div>
+
+          <div id="lessonBox" class="lesson hidden">
+            <h3 id="sectionTitle"></h3>
+            <div id="intro" class="intro"></div>
+            <pre id="example" class="code"></pre>
+            <div class="question" id="question"></div>
+            <form id="answerForm" class="answer">
+              <textarea id="answer" rows="7" placeholder="Type your answer or code here..."></textarea>
+              <button type="submit">Submit Answer</button>
+            </form>
+            <div id="feedback" class="feedback"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">🔥 PyTorch Tutor</div>
+        <nav>
+          <a href="/">Tutor</a>
+          <a href="/tutorial">Tutorial (MD)</a>
+          <a href="/reference/einsum">Einsum Reference</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <header><h1>{{ title }}</h1></header>
+        <article class="doc" id="doc">{{ body_html|safe }}</article>
+      </main>
+    </div>
+  </body>
+</html>
