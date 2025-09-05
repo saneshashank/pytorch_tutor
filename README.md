@@ -1,7 +1,4 @@
-# PyTorch Tutor · Guided (Flask) — v6.1
-
-**Fixes:** Robust template/static paths to resolve `TemplateNotFound: index.html`.  
-Also includes: detailed intros, distinct example vs question, auto‑advance, and working `/tutorial` & `/reference/einsum` routes.
+# PyTorch Tutor 
 
 ## Quickstart
 ```bash
